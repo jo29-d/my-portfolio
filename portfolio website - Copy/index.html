@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Driven Insights Portfolio | Joseph AJ</title>
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    </head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <i class='bx bx-menu' id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">projects</a>
+            <a href="#portfolio">portfolio</a>
+            <a href="#Certifications">Certifications</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <!-- home section design -->
+<section class="home" id="home">
+    <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>Joseph AJ</h1>
+        <h3>And I'm a <span>Data Analyst</span></h3>
+        <p>I analyze data to uncover insights and create interactive dashboards using tools like Power BI, Python, and SQL.</p>
+        <div class="social-media">
+            <!-- Corrected Links Here (removed duplicates) -->
+            <a href="https://www.linkedin.com/in/joseph-aj-analyst/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/jo29-d" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="josephaj.datainsights@gmail.com" target="_blank"><i class='bx bxl-gmail'></i>
+            </div>
+        <a href="document/Joseph_AJ_Data_Analyst_CV.pdf" download="Joseph_AJ_CV" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+        <img src="images/home.jpeg" alt="Joseph AJ" class="animated-image">
+
+    </div>
+</section>
+
+
+    <!-- about section design -->
+     <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Data Analyst!</h3>
+            <p>As a data analyst, I transform raw, unstructured data into clear, actionable insights through meticulous analysis and curiosity. </p>
+                <span id="extraContent" style="display: none;">
+                    My expertise in SQL, Python, and data storytelling helps uncover hidden patterns and craft scalable solutions. I thrive on turning complexity into clarity, empowering confident decision-making.
+                    <br><br>
+                    ➜ Crafting compelling dashboards using Power BI to bring data to life and drive user engagement.<br>
+                    ➜ Ensuring data quality through meticulous cleaning techniques like standardization and deduplication.<br>
+                    ➜ Extracting and analyzing data with precision using SQL and advanced querying methods.<br>
+                    ➜ Delivering data-driven solutions to complex business problems across various domains.<br><br>            
+                </span>
+                <a href="#" class="btn" id="readMoreBtn">Read More</a>
+            </p>
+            
+            <script>
+                const readMoreBtn = document.getElementById('readMoreBtn');
+                const extraContent = document.getElementById('extraContent');
+            
+                readMoreBtn.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevents the page from refreshing
+                    extraContent.style.display = 'inline'; // Shows the hidden content
+                    readMoreBtn.style.display = 'none'; // Hides the Read More button
+                });
+            </script>
+            
+        </div>
+     </section>
+
+     <!-- projects section design -->
+<section class="projects" id="projects">
+    <h2 class="projects">IBM <span>projects</span></h2>
+
+    <div class="projects-container">
+        <div class="projects-box">
+            <i class='bx bxs-dashboard'></i>
+            <h3>Sales Data Dashboard</h3>
+            <p>Built an interactive Power BI dashboard to analyze monthly sales trends, identify top-performing products, and track regional revenue. This project improved decision-making by providing real-time insights.</p>
+            <a href="#" class="btn">View Dashboard</a>
+        </div>
+
+        <div class="projects-box">
+            <i class='bx bxs-data'></i>
+            <h3>Data analysis</h3>
+            <p>A project demonstrating Exploratory Data Analysis (EDA) using SQL in a Jupyter Notebook. Part of a Coursera course, utilizing SQLite for querying and analyzing data. Focuses on data exploration, cleaning, aggregation, and visualization using SQL.</p>
+            <a href="https://github.com/jo29-d/Exploratory-Data-Analysis-EDA-Using-SQL-Using-Flowchart-Coursera-Project" class="btn">Explore Insights</a>
+        </div>
+
+        <div class="projects-box">
+            <i class='bx bx-analyse' ></i>
+            <h3>Data Collection & Analysis</h3>
+            <p>A Jupyter Notebook from the IBM Data Science Certificate capstone, analyzing SpaceX launch data using Python. It covers data collection, cleaning, visualization, and insight generation on success rates and payload trends.</p>
+            <a href="https://github.com/jo29-d/SpaceX-Launch-Data-Collection-and-Analysis-Coursera-Capstone-Project-" class="btn">View Case Study</a>
+        </div>
+    </div>
+</section>
+      
+<!-- portfolio section design -->
+<section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Project</span></h2>
+    <div class="portfolio-container">
+        <div class="portfolio-box">
+            <img src="images/portfolio1.webp" alt="">
+            <div class="portfolio-layer">
+                <h4> Loan Prediction System</h4>
+                <p>Developed a machine learning model to predict loan approval status using Python. </p>
+                <a href="https://github.com/jo29-d/Loan-Prediction-System-using-Machine-Learning"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio2.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>ATM Transaction Analysis Dashboard</h4>
+                <p>The ATM Transaction Analysis Dashboard provides insights into key metrics related to ATM operations</p>
+                <a href="https://github.com/jo29-d/power-bi-dashboard-for-ATM-Transition-Analysis-Dashboard"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio3.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio4.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+
+        <div class="portfolio-box">
+            <img src="images/portfolio5.jpg" alt="">
+            <div class="portfolio-layer">
+                <h4>Web Design</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ratione.</p>
+                <a href="#"><i class='bx bx-link-external'></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- HTML: Remove ALL certification-info divs -->
+<section class="certifications" id="Certifications">
+    <h2 class="heading">My <span>Certifications</span></h2>
+    
+    <div class="certifications-container">
+        <!-- Certification 1 -->
+        <div class="certification-box">
+            <img src="images/cert1.jpg" alt="IBM Certification" loading="lazy">
+        </div>
+
+        <!-- Certification 2 -->
+        <div class="certification-box">
+            <img src="images/cert2.jpg" alt="Google Certification" loading="lazy">
+        </div>
+
+        <!-- Certification 3 -->
+        <div class="certification-box">
+            <img src="images/cert3.jpg" alt="Tableau Certification" loading="lazy">
+        </div>
+    </div>
+</section>
+<!-- Contact section design -->
+<section class="contact" id="contact">
+    <h2 class="heading">Contact <span>Me!</span></h2>
+    
+    <form action="https://formsubmit.co/josephaj.datainsights@gmail.com" method="POST">
+        <div class="input-box">
+            <input type="text" placeholder="Full Name">
+            <input type="email" placeholder="Email Address">
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Mobile Number">
+            <input type="text" placeholder="Email Subject">
+        </div>
+        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+        <input type="submit" value="Send Message" class="btn">
+    </form>
+</section>
+
+<!-- footer design -->
+<footer class="footer">
+    <div class="footer-text">
+        <p>Learning, growing, and building—one project at a time.</p>
+    </div>
+
+    <div class="footer-iconTop">
+        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+    </div>
+</footer>
+
+<!-- scroll reveal -->
+<script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- custom.js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
